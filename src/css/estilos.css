@@ -1,0 +1,117 @@
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+    background-image: url("../images/background.jpg");
+    background-size: 150%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.icone-picareta,
+.icone-sol {
+    width: 50px;
+    border-radius: 12px;
+    transition: 0.2s ease-in-out;
+}
+
+#botao-alterar-minerio,
+#botao-alterar-tema {
+    background: none;
+    border: none;
+}
+
+#titulo {
+    font-family: 'Minecraft', sans-serif;
+    cursor: default;
+    font-size: 50px;
+}
+
+main {
+    padding: 30px;
+}
+
+.minerios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.informacoes {
+    background-color: #c0c0c0;
+    width: 250px;
+    height: 430px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+.icone-picareta:hover,
+.icone-sol:hover,
+.informacoes:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.informacoes:hover {
+    background-color: #cfcddd;
+}
+
+hr {
+    width: 200px;
+}
+
+.nome-minerio {
+    font-size: 27px;
+    font-family: 'Minecraft', sans-serif;
+    color: white;
+    text-shadow: 2px 2px #000000;
+    text-align: center;
+}
+
+.coordenadas {
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 12px;
+    width: 200px;
+    text-shadow: 1px 1px #ececec;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: auto;
+}
+
+.descricao {
+    height: 90px;
+    margin-top: 5px;
+    font-style: italic;
+    font-size: 18px;
+    font-family: 'Londrina Solid', sans-serif;
+    text-align: center;
+}
+
+.modo-escuro {
+    background-image: url(../images/background-noturno.png);
+    background-size: 150%;
+    color: white;
+}
+
+.modo-escuro .informacoes {
+    background-color: #1b1b1a;
+}
+
+.modo-escuro .informacoes:hover {
+    background-color: #2e2e2d;
+}
+
+.modo-escuro .coordenadas {
+    text-shadow: 1px 1px #000000;
+}
